@@ -365,7 +365,11 @@ local petalswarm = {
                 Headers = {
                     ['Content-Type'] = 'application/json';
                 };
-                Body = game:GetService'HttpService':JSONEncode( { content = Content; embeds = { Embed } } );
+                Body = game:GetService'HttpService':JSONEncode( { 
+                    username = "PetalSwarm Private Script";
+                    content = Content; 
+                    embeds = { Embed } 
+                } );
             };
         end)
     end
